@@ -1,0 +1,142 @@
+:root {
+    --bg-color: #191931;
+    --bg-link-color: #2d2d56;
+    --bg-img-color: white;
+    --wrapper-bg-color: rgba(255, 255, 255, 0.1);
+    --wrapper-border-color: rgba(255, 255, 255, 0.2);
+    --wrapper-box-shadow-color: rgba(0, 0, 0, 0.3);
+    --link-card-box-shadow-color: #0f0f25;
+    --icon-color: #8787a3;
+    --text-color: white;
+    --link-icon-color: white;
+    --link-action-color: #8787a3;
+    --link-card-border-color: white;
+    --link-bg-icon-bottom-color: darkblue;
+    --link-bg-icon-top-color: grey;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Sans-Serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    padding: 40px 25px;
+}
+
+.wrapper {
+    background-color: var(--wrapper-bg-color);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid var(--wrapper-border-color);
+    border-radius: 20px;
+    padding: 50px 25px;
+    width: 100%;
+    max-width: 500px;
+    min-width: 320px;
+    box-shadow: 0px 8px 32px var(--wrapper-box-shadow-color);
+}
+
+.wrapper header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper header img {
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid var(--bg-img-color);
+    margin-bottom: 10px;
+    transition: 0.5s all ease;
+}
+
+.wrapper header img:hover {
+    transform: scale(1.1);
+}
+
+.wrapper header h1 {
+    font-size: 32px;
+}
+
+.wrapper header p {
+    margin: 5px 5px;
+    text-align: center;
+}
+
+.wrapper nav ul {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.wrapper nav ul li a {
+    text-decoration: none;
+    color: var(--icon-color);
+    transition: 0.3s all ease;
+    display: inline-block;
+}
+
+.wrapper nav ul li a:hover {
+    color: var(--text-color);
+    transform: scale(1.8);
+}
+
+.wrapper main section ul li {
+    list-style: none;
+}
+
+.wrapper main section .link-card {
+    text-decoration: none;
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--bg-link-color);
+    border: 2px solid var(--bg-link-color);
+    padding: 15px 25px;
+    border-radius: 25px;
+    width: 100%;
+    box-shadow: 4px 8px 0 var(--link-card-box-shadow-color);
+    margin-bottom: 25px;
+    transition: 0.3s border ease;
+}
+
+.wrapper main section .link-card:hover {
+    border: 2px solid var(--link-card-border-color);
+}
+
+.wrapper main section .link-card .link-icon {
+    color: var(--link-icon-color);
+    background-image: linear-gradient(
+        to top,
+        var(--link-bg-icon-bottom-color),
+        var(--link-bg-icon-top-color)
+    );
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.wrapper main section .link-card .link-action {
+    color: var(--link-action-color);
+    cursor: pointer;
+}
+
+.wrapper footer {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: -30px;
+}
