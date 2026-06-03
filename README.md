@@ -4,3 +4,13 @@ Platform bio link modern untuk menyimpan berbagai tautan dengan mudah.
 ## Tech Stack
 - HTML5
 - CSS3
+
+## Structure Project
+``` bash
+linktree-hamzsenpaii/
+├── assets/
+│   └── images/
+│       └── logo-hamzsenpaii.png
+├── index.html
+├── style.css
+└── README.md
