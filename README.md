@@ -14,3 +14,7 @@ linktree-hamzsenpaii/
 ├── index.html
 ├── style.css
 └── README.md
+```
+
+## Author
+Made with by **HamzSenpaii**
