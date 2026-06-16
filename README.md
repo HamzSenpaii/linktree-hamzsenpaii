@@ -21,4 +21,4 @@ Made with by **HamzSenpaii**
 
 ---
 
-<p align="center">© 2026 HsTermux – All rights reserved.</p>
+<p align="center">© 2026 <b>HamzSenpaii</b> – All rights reserved.</p>
